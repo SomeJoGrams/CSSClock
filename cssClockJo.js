@@ -7,6 +7,8 @@ var circleDeg = 360;
 
 var clocks = document.getElementsByClassName("clockJo")
 
+
+// create clocks set the time to 12 o'clock
 for (let ind = 0; ind < clocks.length; ind+=1){
     let curClock = clocks[ind]
     for (let curDeg = circleDeg; curDeg > 0; curDeg-=circleDeg/amountOfLines){
@@ -14,8 +16,8 @@ for (let ind = 0; ind < clocks.length; ind+=1){
         div.classList.add("timeLine")
         div.style.rotate = curDeg + "deg"
         curClock.appendChild(div)
-        setClockTime(curClock,0,0)
     }
+    setClockTime(curClock,0,0)
 }
 
 // the clock element should be the html element with the basic clockJo class
