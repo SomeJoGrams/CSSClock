@@ -1,6 +1,6 @@
 # CSSClock
-A small CSS clock controlled by a java script.
-The time of the clock can be changed by using the "setTime" function on the html elments with the "clock" class.
+A small CSS clock controlled by javascript.
+The time of the clock can be changed by using the "setClockTime" function on the html elments with the "clock" class.
 To insert a clock with standard design use:
 <br>
 \<div class="clockJo"\><br>
