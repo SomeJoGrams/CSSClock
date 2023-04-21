@@ -5,7 +5,7 @@ var minuteAmount = 60;
 var amountOfLines = 12;
 var circleDeg = 360;
 
-var clocks = document.getElementsByClassName("clock")
+var clocks = document.getElementsByClassName("clockJo")
 
 for (let ind = 0; ind < clocks.length; ind+=1){
     let curClock = clocks[ind]
@@ -14,7 +14,7 @@ for (let ind = 0; ind < clocks.length; ind+=1){
         div.classList.add("timeLine")
         div.style.rotate = curDeg + "deg"
         curClock.appendChild(div)
-        setTime(curClock,0,0)
+        setClockTime(curClock,0,0)
     }
 }
 
