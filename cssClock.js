@@ -1,4 +1,6 @@
 
+var hourAmount = 12;
+var minuteAmount = 60;
 
 var amountOfLines = 12;
 var circleDeg = 360;
@@ -18,8 +20,8 @@ for (let ind = 0; ind < clocks.length; ind+=1){
 
 function setTime(clockElement,timeHours,timeMinutes){
     // 180 deg added to set the rotation to the start 0:00
-    let hourDeg = 180 + (360 / 12) * timeHours
-    let minuteDeg = 180 + (360 / 60) * timeMinutes
+    let hourDeg = 180 + (360 / hourAmount) * timeHours
+    let minuteDeg = 180 + (360 / minuteAmount) * timeMinutes
     // clockElement.getElementsByClassName("longPointer")[0].style = " rotate:" + minuteDeg +"deg"
     // clockElement.getElementsByClassName("shortPointer")[0].style = " rotate:" + hourDeg +"deg"
     clockElement.style.setProperty("--shortPointerDeg",minuteDeg +"deg")
