@@ -12,7 +12,7 @@ html {
 
   
 
-.clock{
+.clockJo{
     --shortPointerDeg:0deg;
     --longPointerDeg:0deg;
     z-index: 1;
@@ -30,7 +30,7 @@ html {
 }
 
 
-.clockCenter{
+.clockJoCenter{
     clip-path: margin-box circle(1px);
     background-color: var(--clockBorderColor);
     grid-column: 1;
@@ -41,7 +41,7 @@ html {
     width: 100%;
 }
 
-.pointerLong{
+.pointerHand{
     grid-column: 1;
     grid-row: 1;
     z-index: 3;

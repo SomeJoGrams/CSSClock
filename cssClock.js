@@ -18,7 +18,8 @@ for (let ind = 0; ind < clocks.length; ind+=1){
     }
 }
 
-function setTime(clockElement,timeHours,timeMinutes){
+// the clock element should be the html element with the basic clockJo class
+function setClockTime(clockElement,timeHours,timeMinutes){
     // 180 deg added to set the rotation to the start 0:00
     let hourDeg = 180 + (360 / hourAmount) * timeHours
     let minuteDeg = 180 + (360 / minuteAmount) * timeMinutes
